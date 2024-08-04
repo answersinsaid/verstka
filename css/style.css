@@ -1,22 +1,26 @@
 *,
 ::before,
 ::after {
-padding: 0;
-margin: 0;
-border: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 ul,
 ol,
 li {
     list-style: none;
 }
+
 img {
     vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -35,23 +39,28 @@ body {
     font-family: Montserrat;
     color: rgb(37, 43, 66);
     font-weight: 500;
+    background-color: #fafafa;
 }
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
-._conteainer {
+
+._contauner {
     max-width: 1046px;
     margin: 0px auto;
     padding: 0 15px;
     box-sizing: content-box;
 }
+
 ._ibg {
     position: relative;
 
 }
+
 ._ibg img {
     position: absolute;
     width: 100%;
@@ -61,6 +70,7 @@ body {
     object-fit: cover;
 
 }
+
 /*---------ШАПКА----------------------------------------------- */
 .header {
     position: absolute;
@@ -69,98 +79,128 @@ body {
     top: 0;
     z-index: 50;
 }
+
 .header__container {
     display: flex;
     min-height: 104px;
     align-items: center;
 
 }
+
 @media (max-width: 479px) {
     .header__container {
         min-height: 70px;
     }
 }
+
 .header__logo {
     font-size: 24px;
     font-weight: 700;
     color: inherit;
 
 }
+
 .header__menu {
     margin: 0px 0px 0px 133px;
 
 }
+
 @media (max-width:992px) {
     .header__menu {
         margin: 0px 0px 0px 80px;
     }
 }
+
 @media (max-width: 767px) {
     .header__menu {
         margin: 0px 0px 0px 40px;
     }
 }
+
 @media (max-width: 479px) {
     .header__menu {
         margin: 0px 0px 0px 20px;
     }
 }
+
 .menu {
     padding: 5x 0px;
 }
+
 .menu__list {
     display: flex;
     flex-wrap: wrap;
-    
-}
-menu__item {
 
 }
+
 .menu__item:not(:last-child) {
     margin: 0px 21px 0px 0px;
-    
+
 }
+
 .menu__link {
     color: rgb(115, 115, 115);
     line-height: 171%;
     font-weight: 600;
-    
+
 }
+
 @media (max-width: 479px) {
     .menu_link {
         font-size: 18px;
     }
 }
+
 /*---------page----------------------------------------------- */
 .page {
     flex: 1 1 auto;
 }
+
 .page__services {
+    position: relative;
+    z-index: 2;
+    margin: -120px 0px 0px 0px;
+}
+.page__advantages {
 
 }
+.page__practice {
+
+}
+
 /*---------MAIN-BLOCK----------------------------------------------- */
 .main-block {
     position: relative;
 
 }
+
 .main-block__container {
+    max-width: 1046px;
+    margin: 0px auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+    
     
 }
+
 .main-block__body {
     padding: 184px 0px 191px 0px;
     position: relative;
     z-index: 2;
     max-width: 400px;
 }
-@media(max-width: 992px){
+
+@media(max-width: 992px) {
     .main-block__body {
         padding: 120px 0px 191px 0px;
     }
-} 
-.main-block__body > *:not(:last-child) {
+}
+
+.main-block__body>*:not(:last-child) {
     margin: 0px 0px 35px 0px;
 
 }
+
 .main-block__title {
     font-size: 58px;
     line-height: 137%;
@@ -168,26 +208,31 @@ menu__item {
     letter-spacing: 0.2px;
 
 }
-@media(max-width: 479px){
+
+@media(max-width: 479px) {
     .main-block__title {
         font-size: 42px;
-    }        
+    }
 }
+
 .main-block__text {
     color: rgb(115, 115, 115);
     font-size: 20px;
     line-height: 150%;
 }
-@media(max-width: 479px){
+
+@media(max-width: 479px) {
     .main-block__text {
         color: rgb(90, 89, 89);
     }
 }
+
 .main-block__buttons {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     margin: -10px;
 }
+
 .main-block__button {
     border-radius: 37px;
     display: flex;
@@ -201,24 +246,29 @@ menu__item {
     text-align: center;
     margin: 10px 0px;
 }
-@media(max-width: 479px){
+
+@media(max-width: 479px) {
     .main-block__button {
         flex: 1 1 100%;
-    }        
-}
-@media(min-width: 479px){
-.main-block__button:not(:last-child) {
-    margin-right:10px;
     }
 }
-    .main-block__button_orange {
+
+@media(min-width: 479px) {
+    .main-block__button:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.main-block__button_orange {
     background: rgb(255, 123, 71);
     color: rgb(255, 255, 255);
 }
+
 .main-block__button_border {
-    color:  rgb(13, 92, 99);
+    color: rgb(13, 92, 99);
     border: 1px solid rgb(13, 92, 99);
 }
+
 .main-block__image {
     position: absolute;
     width: 100%;
@@ -226,56 +276,197 @@ menu__item {
     top: 0;
     left: 0;
 }
-@media(max-width: 1300px){
+
+@media(max-width: 1300px) {
     .main-block__image img {
         object-position: right;
     }
 }
-@media(max-width: 992px){
+
+@media(max-width: 992px) {
     .main-block__image img {
         opacity: 0.5;
     }
 }
-/*---------ПОДВАЛ----------------------------------------------- */
+
+/*---------SERVICES----------------------------------------------- */
 .services {
 }
-.services__container {
 
+.services__container {
+    max-width: 1046px;
+    margin: 0px auto;
+    padding: 0 15px;
+    box-sizing: content-box;
 }
+
 .services__body {
     display: flex;
     margin: 0px -15px;
 }
-.services__column { 
+
+.services__column {
     padding: 0px 15px;
     flex: 0 1 33.333%;
 }
-.services__item {
+
+.services__item{
+    height: 100%;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     background-color: white;
     padding: 35px;
-
 }
-.item-service {
 
+.item-service_green  {
+    background-color: rgb(13, 92, 99);
 }
-.item-service > * :not(:last-child) {
+.item-service_green .item-service__title {
+    color: white;
+}
+.item-service_green .item-service__text {
+    color: white;
+}
+.item-service>* :not(:last-child) {
     margin: 0px 0px 10px 0px;
 }
-.item-service__icon {
 
+.item-service__icon {
+    margin-bottom: 15px;
 }
+
 .item-service__title {
     font-weight: 700;
     letter-spacing: 0.1px;
     font-size: 24px;
     line-height: 133%;
 }
+
 .item-service__text {
     color: rgb(115, 115, 115);
     line-height: 142%;
 }
-/*---------ПОДВАЛ----------------------------------------------- */
-.footer {
+/*---------HEADER BLOCK----------------------------------------------- */
+
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+    font-weight: 700;
 
 }
+.header-block__title {
+    font-size: 40px ;
+    line-height: 142%;
+    font-weight: 700;
+}
+.header-block__title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.header-block__sub-title {
+    color: rgb(115, 115, 115);
+    line-height: 142%;
+
+}
+/*---------advantages----------------------------------------------- */
+
+.advantages {
+    padding: 80px 0px;
+}
+.advantages__header {
+    margin: 0px 0px 50px 0px;
+}
+
+.advantages__body {
+    display: flex;
+    max-width: 1046px;
+    margin: 0px auto;
+    padding: 0 15px;
+    box-sizing: content-box;  
+}
+.advantages__column {
+    flex: 0 1 25% ;
+}
+.advantages__item {
+    background-color: white;
+    padding: 30px 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.advantages__item > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.advantages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.advantages__value{
+    font-size: 40px;
+    line-height: 142%;
+}
+.advantages__text {
+    letter-spacing: 0.1px;
+    color: rgb(115, 115, 115);
+    font-size: 16px;
+    line-height: 150%;
+
+}
+/*---------practice----------------------------------------------- */
+.practice {
+    padding: 125px 0px 80px 0px;
+}
+.practice__container {
+    
+    
+}
+.practice__header {
+    margin:  0px 0px 45px 0px;
+
+}
+.practice__body {
+    max-width: 1046px;
+    padding: 0px -15px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box; 
+
+}
+.practice__column {
+    padding: 0px 15px;
+    flex: 0 1 25%;
+    
+}
+.practice__item {
+    padding: 0px -15px;
+    
+    
+    
+}
+._item-practice {
+    background-color: white;
+
+}
+.item-practice__content {
+    padding: 30px;
+
+}
+.item-practice__link {
+    color: inherit;
+    display: inline-block;
+}
+.item-practice__link:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+}
+.item-practice__title {
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+.item-practice__text {
+    color: rgb(115, 115, 115);
+    line-height: 142%;
+
+}
+/*---------ПОДВАЛ----------------------------------------------- */
+.footer {}
